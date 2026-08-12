@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Program</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #172554;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .warning {
+            background: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .tips {
+            background: #ecfdf5;
+            border-left: 5px solid #16a34a;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .case {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .quiz-question {
+            margin-top: 20px;
+            padding: 18px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .quiz-question button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 8px 0;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .quiz-question button:hover {
+            background: #e2e8f0;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: block;
+                margin: 7px;
+            }
+
+            .container {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Phishing Awareness Program</h1>
+    <p>Learn how to identify and avoid phishing attacks</p>
+</header>
+
+<nav>
+    <a href="#phishing">Phishing</a>
+    <a href="#warning-signs">Warning Signs</a>
+    <a href="#social">Social Engineering</a>
+    <a href="#tips">Security Tips</a>
+    <a href="#quiz">Quiz</a>
+</nav>
+
+<div class="container">
+
+    <section id="phishing">
+        <h2>What is Phishing?</h2>
+
+        <p>
+            Phishing is a type of cyber attack where attackers attempt to
+            trick people into providing sensitive information or visiting
+            fraudulent websites.
+        </p>
+
+        <div class="warning">
+            <strong>Remember:</strong>
+            Always be careful with unexpected emails, messages, links,
+            and login pages.
+        </div>
+    </section>
+
+    <section id="warning-signs">
+        <h2>How to Identify Suspicious Emails and Websites</h2>
+
+        <ul>
+            <li>Unexpected messages asking for personal information.</li>
+            <li>Links that lead to unfamiliar or suspicious websites.</li>
+            <li>Fake login pages designed to look like legitimate websites.</li>
+            <li>Messages creating pressure or urgency.</li>
+            <li>Requests for passwords or other sensitive information.</li>
+        </ul>
+
+        <h3>Fake Login Pages</h3>
+
+        <p>
+            A fraudulent login page may be designed to look like a legitimate
+            website. Users should carefully check the website before entering
+            account information.
+        </p>
+    </section>
+
+    <section id="social">
+        <h2>Social Engineering</h2>
+
+        <p>
+            Social engineering involves manipulating people into taking an
+            action or revealing information.
+        </p>
+
+        <h3>Common Techniques</h3>
+
+        <ul>
+            <li>Creating a sense of urgency.</li>
+            <li>Pretending to be a trusted person or organization.</li>
+            <li>Using convincing messages to gain trust.</li>
+            <li>Encouraging users to click suspicious links.</li>
+        </ul>
+    </section>
+
+    <section id="tips">
+        <h2>Practical Security Tips</h2>
+
+        <div class="tips">
+            <ul>
+                <li>Think carefully before clicking links in unexpected messages.</li>
+                <li>Check websites carefully before entering information.</li>
+                <li>Do not provide sensitive information to suspicious requests.</li>
+                <li>Be cautious of unexpected emails and messages.</li>
+                <li>Learn to recognize common social engineering techniques.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Case Study</h2>
+
+        <div class="case">
+            <h3>Example: Suspicious Account Message</h3>
+
+            <p>
+                Imagine receiving a message claiming that your account has
+                a problem and asking you to click a link to log in.
+            </p>
+
+            <p>
+                Instead of immediately clicking the link, stop and examine
+                the message carefully. Check whether the request is expected
+                and whether the website appears legitimate.
+            </p>
+
+            <p>
+                This simple pause can help prevent users from falling for
+                fraudulent websites and social engineering attempts.
+            </p>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Phishing Awareness Quiz</h2>
+
+        <div class="quiz-question">
+            <p><strong>1. What should you do with an unexpected suspicious link?</strong></p>
+
+            <button onclick="answer(1, false)">Click it immediately</button>
+            <button onclick="answer(1, true)">Think carefully and verify it first</button>
+            <button onclick="answer(1, false)">Share it with others</button>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>2. What is a fake login page?</strong></p>
+
+            <button onclick="answer(2, false)">A normal homepage</button>
+            <button onclick="answer(2, true)">A fraudulent page designed to imitate a legitimate login page</button>
+            <button onclick="answer(2, false)">A computer settings page</button>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>3. What is social engineering?</strong></p>
+
+            <button onclick="answer(3, true)">Manipulating people into taking an action or revealing information</button>
+            <button onclick="answer(3, false)">Installing computer hardware</button>
+            <button onclick="answer(3, false)">Creating a computer network</button>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>4. Which is a warning sign of phishing?</strong></p>
+
+            <button onclick="answer(4, false)">A normal expected message</button>
+            <button onclick="answer(4, true)">A suspicious request creating urgency</button>
+            <button onclick="answer(4, false)">A trusted offline document</button>
+        </div>
+
+        <div id="result">Score: 0 / 4</div>
+    </section>
+
+</div>
+
+<footer>
+    <p>CodSoft Internship Project - Phishing Awareness Program</p>
+    <p>Educational purpose: Learn and grow in cybersecurity awareness.</p>
+</footer>
+
+<script>
+    let score = 0;
+    let answered = {};
+
+    function answer(question, correct) {
+        if (answered[question]) {
+            return;
+        }
+
+        answered[question] = true;
+
+        if (correct) {
+            score++;
+            alert("Correct!");
+        } else {
+            alert("Not quite. Review the section and try to learn from it.");
+        }
+
+        document.getElementById("result").innerText =
+            "Score: " + score + " / 4";
+    }
+</script>
+
+</body>
+</html>
