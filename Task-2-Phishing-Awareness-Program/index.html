@@ -8,11 +8,10 @@
     <style>
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
 
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             background: #f4f7fb;
             color: #222;
@@ -23,139 +22,80 @@
             background: #172554;
             color: white;
             text-align: center;
-            padding: 35px 20px;
+            padding: 35px 15px;
         }
 
         header h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 17px;
-        }
-
-        nav {
-            background: #0f172a;
-            padding: 12px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
+            margin: 0 0 10px;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
-            padding: 25px;
+            padding: 20px;
         }
 
         section {
             background: white;
-            margin-bottom: 25px;
+            margin: 20px 0;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         }
 
         h2 {
             color: #172554;
-            margin-bottom: 15px;
-        }
-
-        h3 {
-            margin-top: 18px;
-            margin-bottom: 8px;
-        }
-
-        ul {
-            margin-left: 25px;
-        }
-
-        li {
-            margin-bottom: 8px;
         }
 
         .warning {
             background: #fff7ed;
             border-left: 5px solid #f97316;
             padding: 15px;
-            margin-top: 15px;
+            margin: 15px 0;
         }
 
-        .tips {
+        .tip {
             background: #ecfdf5;
             border-left: 5px solid #16a34a;
             padding: 15px;
-            margin-top: 15px;
+            margin: 15px 0;
         }
 
-        .case {
-            background: #eff6ff;
-            border-left: 5px solid #2563eb;
-            padding: 15px;
-            margin-top: 15px;
+        li {
+            margin: 8px 0;
         }
 
         .quiz-question {
-            margin-top: 20px;
-            padding: 18px;
+            margin: 20px 0;
+            padding: 15px;
             background: #f8fafc;
             border-radius: 8px;
         }
 
-        .quiz-question button {
-            display: block;
-            width: 100%;
-            text-align: left;
-            margin: 8px 0;
-            padding: 12px;
-            border: 1px solid #cbd5e1;
-            background: white;
-            border-radius: 6px;
+        button {
+            background: #172554;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 7px;
             cursor: pointer;
+            font-size: 16px;
         }
 
-        .quiz-question button:hover {
-            background: #e2e8f0;
+        button:hover {
+            background: #1e3a8a;
         }
 
         #result {
-            margin-top: 20px;
-            font-size: 20px;
+            margin-top: 15px;
             font-weight: bold;
-            text-align: center;
         }
 
         footer {
-            background: #0f172a;
-            color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 25px;
-            }
-
-            nav a {
-                display: block;
-                margin: 7px;
-            }
-
-            .container {
-                padding: 12px;
-            }
+            padding: 25px;
+            background: #172554;
+            color: white;
         }
     </style>
 </head>
@@ -163,177 +103,191 @@
 <body>
 
 <header>
-    <h1>Phishing Awareness Program</h1>
+    <h1>🛡️ Phishing Awareness Program</h1>
     <p>Learn how to identify and avoid phishing attacks</p>
 </header>
 
-<nav>
-    <a href="#phishing">Phishing</a>
-    <a href="#warning-signs">Warning Signs</a>
-    <a href="#social">Social Engineering</a>
-    <a href="#tips">Security Tips</a>
-    <a href="#quiz">Quiz</a>
-</nav>
-
 <div class="container">
 
-    <section id="phishing">
+    <section>
         <h2>What is Phishing?</h2>
-
         <p>
-            Phishing is a type of cyber attack where attackers attempt to
-            trick people into providing sensitive information or visiting
-            fraudulent websites.
+            Phishing is a cyberattack where criminals use fake messages,
+            websites, or emails to trick people into revealing sensitive
+            information or performing unsafe actions.
         </p>
 
         <div class="warning">
-            <strong>Remember:</strong>
-            Always be careful with unexpected emails, messages, links,
-            and login pages.
+            <strong>⚠️ Remember:</strong> Never share passwords, OTPs,
+            banking details, or other sensitive information through
+            suspicious links or messages.
         </div>
     </section>
 
-    <section id="warning-signs">
-        <h2>How to Identify Suspicious Emails and Websites</h2>
+    <section>
+        <h2>📧 How to Identify Suspicious Emails</h2>
 
         <ul>
-            <li>Unexpected messages asking for personal information.</li>
-            <li>Links that lead to unfamiliar or suspicious websites.</li>
-            <li>Fake login pages designed to look like legitimate websites.</li>
-            <li>Messages creating pressure or urgency.</li>
-            <li>Requests for passwords or other sensitive information.</li>
-        </ul>
-
-        <h3>Fake Login Pages</h3>
-
-        <p>
-            A fraudulent login page may be designed to look like a legitimate
-            website. Users should carefully check the website before entering
-            account information.
-        </p>
-    </section>
-
-    <section id="social">
-        <h2>Social Engineering</h2>
-
-        <p>
-            Social engineering involves manipulating people into taking an
-            action or revealing information.
-        </p>
-
-        <h3>Common Techniques</h3>
-
-        <ul>
-            <li>Creating a sense of urgency.</li>
-            <li>Pretending to be a trusted person or organization.</li>
-            <li>Using convincing messages to gain trust.</li>
-            <li>Encouraging users to click suspicious links.</li>
+            <li>Check the sender's email address carefully.</li>
+            <li>Be suspicious of unexpected attachments.</li>
+            <li>Watch for urgent or threatening language.</li>
+            <li>Look for spelling and grammar mistakes.</li>
+            <li>Do not click unknown links.</li>
+            <li>Verify unusual requests through another trusted method.</li>
         </ul>
     </section>
 
-    <section id="tips">
-        <h2>Practical Security Tips</h2>
+    <section>
+        <h2>🔐 Fake Login Pages</h2>
 
-        <div class="tips">
+        <p>
+            Attackers may create websites that look similar to legitimate
+            login pages. Their goal is to trick users into entering
+            usernames and passwords.
+        </p>
+
+        <div class="tip">
+            <strong>Safety Tip:</strong>
+            Check the website address before entering your credentials.
+            Look carefully for unusual domains, spelling changes, or
+            suspicious URLs.
+        </div>
+    </section>
+
+    <section>
+        <h2>🌐 Fraudulent Websites</h2>
+
+        <ul>
+            <li>Check the website domain carefully.</li>
+            <li>Be cautious about unexpected offers or prizes.</li>
+            <li>Look for secure HTTPS connections.</li>
+            <li>Avoid websites reached through suspicious messages.</li>
+            <li>Use official websites or trusted bookmarks when possible.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🎭 Common Social Engineering Techniques</h2>
+
+        <p>Cybercriminals may manipulate people using techniques such as:</p>
+
+        <ul>
+            <li><strong>Urgency:</strong> "Act immediately or your account will be closed."</li>
+            <li><strong>Fear:</strong> Creating panic so the victim acts without thinking.</li>
+            <li><strong>Impersonation:</strong> Pretending to be a bank, company, teacher, or other trusted person.</li>
+            <li><strong>Curiosity:</strong> Using an interesting message to encourage a click.</li>
+            <li><strong>Rewards:</strong> Offering fake prizes, discounts, or gifts.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🛡️ Practical Security Tips</h2>
+
+        <div class="tip">
             <ul>
-                <li>Think carefully before clicking links in unexpected messages.</li>
-                <li>Check websites carefully before entering information.</li>
-                <li>Do not provide sensitive information to suspicious requests.</li>
-                <li>Be cautious of unexpected emails and messages.</li>
-                <li>Learn to recognize common social engineering techniques.</li>
+                <li>Use strong and unique passwords.</li>
+                <li>Enable multi-factor authentication.</li>
+                <li>Keep your operating system and applications updated.</li>
+                <li>Think before clicking links or opening attachments.</li>
+                <li>Verify unexpected requests for sensitive information.</li>
+                <li>Report suspicious messages to the appropriate organization.</li>
             </ul>
         </div>
     </section>
 
     <section>
-        <h2>Case Study</h2>
+        <h2>📚 Case Study</h2>
 
-        <div class="case">
-            <h3>Example: Suspicious Account Message</h3>
+        <p>
+            A user receives an email claiming to be from a bank.
+            The message says there is a problem with the user's account
+            and asks them to click a link immediately to verify their
+            information.
+        </p>
 
-            <p>
-                Imagine receiving a message claiming that your account has
-                a problem and asking you to click a link to log in.
-            </p>
+        <p>
+            The email creates urgency and directs the user to a suspicious
+            website. These are common warning signs of a phishing attempt.
+        </p>
 
-            <p>
-                Instead of immediately clicking the link, stop and examine
-                the message carefully. Check whether the request is expected
-                and whether the website appears legitimate.
-            </p>
-
-            <p>
-                This simple pause can help prevent users from falling for
-                fraudulent websites and social engineering attempts.
-            </p>
+        <div class="tip">
+            <strong>What should the user do?</strong>
+            Do not click the link. Instead, contact the bank using its
+            official website or official contact information.
         </div>
     </section>
 
-    <section id="quiz">
-        <h2>Phishing Awareness Quiz</h2>
+    <section>
+        <h2>🧠 Phishing Awareness Quiz</h2>
 
         <div class="quiz-question">
-            <p><strong>1. What should you do with an unexpected suspicious link?</strong></p>
+            <p><strong>1. What should you do with a suspicious email link?</strong></p>
+            <label>
+                <input type="radio" name="q1" value="wrong">
+                Click it immediately
+            </label><br>
 
-            <button onclick="answer(1, false)">Click it immediately</button>
-            <button onclick="answer(1, true)">Think carefully and verify it first</button>
-            <button onclick="answer(1, false)">Share it with others</button>
+            <label>
+                <input type="radio" name="q1" value="correct">
+                Avoid clicking it and verify the sender
+            </label>
         </div>
 
         <div class="quiz-question">
-            <p><strong>2. What is a fake login page?</strong></p>
+            <p><strong>2. What is a common social engineering technique?</strong></p>
+            <label>
+                <input type="radio" name="q2" value="correct">
+                Creating urgency
+            </label><br>
 
-            <button onclick="answer(2, false)">A normal homepage</button>
-            <button onclick="answer(2, true)">A fraudulent page designed to imitate a legitimate login page</button>
-            <button onclick="answer(2, false)">A computer settings page</button>
+            <label>
+                <input type="radio" name="q2" value="wrong">
+                Installing updates
+            </label>
         </div>
 
         <div class="quiz-question">
-            <p><strong>3. What is social engineering?</strong></p>
+            <p><strong>3. What should you check before entering information on a website?</strong></p>
+            <label>
+                <input type="radio" name="q3" value="correct">
+                The website address and legitimacy
+            </label><br>
 
-            <button onclick="answer(3, true)">Manipulating people into taking an action or revealing information</button>
-            <button onclick="answer(3, false)">Installing computer hardware</button>
-            <button onclick="answer(3, false)">Creating a computer network</button>
+            <label>
+                <input type="radio" name="q3" value="wrong">
+                Only the website colors
+            </label>
         </div>
 
-        <div class="quiz-question">
-            <p><strong>4. Which is a warning sign of phishing?</strong></p>
+        <button onclick="checkQuiz()">Submit Quiz</button>
 
-            <button onclick="answer(4, false)">A normal expected message</button>
-            <button onclick="answer(4, true)">A suspicious request creating urgency</button>
-            <button onclick="answer(4, false)">A trusted offline document</button>
-        </div>
-
-        <div id="result">Score: 0 / 4</div>
+        <p id="result"></p>
     </section>
 
 </div>
 
 <footer>
-    <p>CodSoft Internship Project - Phishing Awareness Program</p>
-    <p>Educational purpose: Learn and grow in cybersecurity awareness.</p>
+    <p>Stay Alert • Think Before You Click • Stay Safe Online</p>
 </footer>
 
 <script>
-    let score = 0;
-    let answered = {};
+    function checkQuiz() {
+        let score = 0;
 
-    function answer(question, correct) {
-        if (answered[question]) {
-            return;
-        }
+        const answers = ["q1", "q2", "q3"];
 
-        answered[question] = true;
+        answers.forEach(function(question) {
+            const selected = document.querySelector(
+                'input[name="' + question + '"]:checked'
+            );
 
-        if (correct) {
-            score++;
-            alert("Correct!");
-        } else {
-            alert("Not quite. Review the section and try to learn from it.");
-        }
+            if (selected && selected.value === "correct") {
+                score++;
+            }
+        });
 
-        document.getElementById("result").innerText =
-            "Score: " + score + " / 4";
+        document.getElementById("result").textContent =
+            "Your score: " + score + "/3";
     }
 </script>
 
